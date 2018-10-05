@@ -1,0 +1,37 @@
+Login Validation
+
+Create Procedure [Group3].[USP_LoginEmployeeVal]
+@EmployeeEmail varchar(30),
+@EmployeePassword varchar(30)
+as
+select EmployeeID from Group3.Employee where  EmployeeEmail=@EmployeeEmail and EmployeePassword=@EmployeePassword
+
+RETURN 0
+
+-------------------------------------------------------------------------
+
+Select Employee
+
+CREATE PROCEDURE [Group3].[USP_SelectAll_Employee]
+	
+AS
+	SELECT * from Group3.Employee
+RETURN 0
+-------------------------------------------------------------------------
+
+Select All travel
+
+CREATE PROCEDURE [Group3].[USP_SelectAll_Travel]
+	
+AS
+	SELECT * from Group3.Travel
+RETURN 0
+--------------------------------------------------------------------------
+Delete Travel
+
+CREATE PROCEDURE [Group3].[USP_TravelDel]
+	 @TravelID int
+AS
+	delete from Travel where TravelID=@TravelID
+RETURN 0
+---------------------------------------------------------------------------

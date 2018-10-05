@@ -1,0 +1,23 @@
+Employee Table
+
+CREATE TABLE [Group3].[Employee] (
+    [EmployeeID]       INT           IDENTITY (126000, 1) NOT NULL,
+    [EmployeeName]     VARCHAR (30)  NULL,
+    [EmployeeEmail]    NVARCHAR (30) NULL,
+    [EmployeePhoneNo]  BIGINT        NULL,
+    [EmployeePassword] NVARCHAR (30) NULL,
+    PRIMARY KEY CLUSTERED ([EmployeeID] ASC)
+);
+
+---------------------------------------------------------
+
+Travel table
+
+CREATE TABLE [Group3].[Travel] (
+    [TravelID]          INT          IDENTITY (1, 1) NOT NULL,
+    [TravelStartdate]   DATE         NULL,
+    [TravelEnddate]     DATE         NULL,
+    [TravelSource]      VARCHAR (30) NULL,
+    [TravelDestination] VARCHAR (30) NULL,
+    PRIMARY KEY CLUSTERED ([TravelID] ASC)
+);
